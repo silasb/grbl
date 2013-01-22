@@ -19,12 +19,11 @@
   along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
 */
   
-#include <util/delay.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include "avr_specifics.h"
 #include "stepper.h"
 #include "settings.h"
-#include "nuts_bolts.h"
 #include "config.h"
 #include "spindle_control.h"
 #include "motion_control.h"

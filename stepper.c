@@ -23,6 +23,7 @@
    and Philipp Tiefenbacher. */
 
 #include <avr/interrupt.h>
+#include "avr_specifics.h"
 #include "stepper.h"
 #include "config.h"
 #include "settings.h"

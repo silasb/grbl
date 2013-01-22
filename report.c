@@ -27,10 +27,10 @@
 */
 
 #include <avr/pgmspace.h>
+#include "avr_specifics.h"
 #include "report.h"
 #include "print.h"
 #include "settings.h"
-#include "nuts_bolts.h"
 #include "gcode.h"
 #include "coolant_control.h"
 

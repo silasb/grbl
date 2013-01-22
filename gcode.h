@@ -21,7 +21,6 @@
 
 #ifndef gcode_h
 #define gcode_h
-#include <avr/io.h>
 #include "nuts_bolts.h"
 
 // Define modal group internal numbers for checking multiple command violations and tracking the 
@@ -85,6 +84,7 @@ typedef struct {
   float coord_offset[N_AXIS];      // Retains the G92 coordinate offset (work coordinates) relative to
                                    // machine zero in mm. Non-persistent. Cleared upon reset and boot.        
 } parser_state_t;
+
 extern parser_state_t gc;
 
 // Initialize the parser

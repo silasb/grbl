@@ -21,16 +21,15 @@
 */
 
 #include <avr/io.h>
-#include <util/delay.h>
 #include <math.h>
 #include <stdlib.h>
+#include "avr_specifics.h"
 #include "settings.h"
 #include "config.h"
 #include "gcode.h"
 #include "motion_control.h"
 #include "spindle_control.h"
 #include "coolant_control.h"
-#include "nuts_bolts.h"
 #include "stepper.h"
 #include "planner.h"
 #include "limits.h"
@@ -204,7 +203,7 @@ void mc_dwell(float seconds)
      // NOTE: Check and execute runtime commands during dwell every <= DWELL_TIME_STEP milliseconds.
      protocol_execute_runtime();
      if (sys.abort) { return; }
-     _delay_ms(DWELL_TIME_STEP); // Delay DWELL_TIME_STEP increment
+     delay_ms(DWELL_TIME_STEP); // Delay DWELL_TIME_STEP increment
    }
 }
 

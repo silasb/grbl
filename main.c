@@ -27,7 +27,6 @@
 #include <avr/pgmspace.h>
 #include "config.h"
 #include "planner.h"
-#include "nuts_bolts.h"
 #include "stepper.h"
 #include "spindle_control.h"
 #include "coolant_control.h"
